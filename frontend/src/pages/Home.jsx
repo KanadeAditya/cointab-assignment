@@ -51,7 +51,7 @@ function Home() {
             })
 
             // console.log(records)
-            fetch('http://localhost:5050/bulkcreate', {
+            fetch('http://localhost:5050/api/bulkcreate', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json', // Set the content type to JSON
@@ -76,7 +76,7 @@ function Home() {
     }
     const HandleDelete = () => {
         // alert("From Delete")
-        const url = 'http://localhost:5050/bulkdelete'; // Replace with your API endpoint URL
+        const url = 'http://localhost:5050/api/bulkdelete'; // Replace with your API endpoint URL
         const options = {
         method: 'DELETE',
         headers: {

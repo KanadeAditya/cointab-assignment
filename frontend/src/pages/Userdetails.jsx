@@ -6,7 +6,7 @@ function Userdetails() {
 
     useEffect(() => {
       
-        fetch('http://localhost:5050')
+        fetch('http://localhost:5050/api')
         .then(res=>res.json())
         .then((data)=>{
             let records = data.data
@@ -23,7 +23,7 @@ function Userdetails() {
 
 
     const Handlebutton =(e)=>{
-        fetch(`http://localhost:5050/?page=${e.target.dataset.id}&perPage=10`)
+        fetch(`http://localhost:5050/api/?page=${e.target.dataset.id}&perPage=10`)
         .then(res=>res.json())
         .then((data)=>{
             let records = data.data

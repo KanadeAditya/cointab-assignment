@@ -60,9 +60,9 @@ To use the application:
 - [RandomUser API](https://randomuser.me/): Used to fetch user data.
 
 ## API Endpoints
-- `POST /bulkcreate`: On recieving user data in bulk from the RandomUser API passed in the body as array of objects, stores it in the database[AWS RDS].
-- `DELETE /bulkdelete`: Deletes all user entries from the table.
-- `GET /`: Retrieves user data from the AWS RDS database and also has pagination option in queries and filter options .
+- `POST /api/bulkcreate`: On recieving user data in bulk from the RandomUser API passed in the body as array of objects, stores it in the database[AWS RDS].
+- `DELETE /api/bulkdelete`: Deletes all user entries from the table.
+- `GET /api`: Retrieves user data from the AWS RDS database and also has pagination option in queries and filter options .
 
     Following are the query parameters that you can pass in the API for the desired output
     -  page
